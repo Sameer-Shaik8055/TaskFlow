@@ -1,0 +1,17 @@
+# ── Monorepo root .gitignore (extra safety net) ──
+# Each sub-app (web/, mobile/) also has its own .gitignore.
+
+# OS junk
+.DS_Store
+
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/.next/
+**/build/
+**/dist/
+
+# Secrets — NEVER commit these (defense in depth)
+**/.env
+**/.env*.local
